@@ -1,0 +1,13 @@
+<server xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="server.xsd"
+        description="Liberty Server for Sessions Management">
+
+    <featureManager>
+        <feature>servlet-4.0</feature>
+        <feature>cdi-2.0</feature>
+    </featureManager>
+
+    <httpEndpoint httpPort="9080" id="defaultHttpEndpoint" host="*"/>
+
+    <webApplication location="servlet-vs-cdi-session.war" contextRoot="test"/>
+
+</server>
